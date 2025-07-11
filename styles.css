@@ -5,17 +5,32 @@
 }
 
 body {
-    background-color:rgb(156, 39, 156);
+    background-color:var(--background);
     color: var(--primary);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+header {
+    background-image: url("abstract-wallpaper-1.jpg");
+    background-size: cover;
+    padding: 20px;
+    border-radius: 15px;
+    color: var(--section);
+}
+
+nav {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
 section {
-    background-color: var(--section);
+    background-color: var(--accent);
     width: 800px;
     margin-top: 30px;
+    text-align: center;
 
 }
 
@@ -37,4 +52,10 @@ section h2 {
 }
 a {
     color: var(--accent);
+}
+
+a:hover {
+    color: var(--primary);
+    transform: rotate(10deg);
+    display: inline-block;
 }
